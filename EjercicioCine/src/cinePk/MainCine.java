@@ -6,7 +6,7 @@ public class MainCine {
 		Cine cine = new Cine(4,"Terror en el instituto",10);
            System.out.println(cine);
            
-           Cine cinesa=new Cine(3);
+           Cine cinesa=new Cine( 3);
            cinesa.venderEntrada();
            System.out.println(cinesa);
            cinesa.getAforo();
