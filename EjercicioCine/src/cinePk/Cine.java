@@ -25,7 +25,7 @@ public class Cine {
 	 * constructor con 3 parametros(completo)
 	 * @param int aforo
 	 * @param String tituloPelicula
-	 * @param  int precioEntrada
+	 * @param  double precioEntrada
 	 */
 
 	public Cine(int aforo, String tituloPelicula, double precioEntrada) {
