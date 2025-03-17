@@ -30,9 +30,9 @@ public class Cine {
 
 	public Cine(int aforo, String tituloPelicula, double precioEntrada) {
 		super();
-		this.aforo = 100;
-		this.tituloPelicula = "Sin determinar";
-		this.precioEntrada = 5;
+		this.aforo =aforo; 
+		this.tituloPelicula = tituloPelicula;
+		this.precioEntrada = precioEntrada;
 		this.butacasOcupadas=0;
 	}
 /**
@@ -42,7 +42,7 @@ public class Cine {
 	public Cine(int aforo) {
 		super();
 
-		this.aforo = 100;
+		this.aforo =aforo;
 		this.tituloPelicula = "Sin determinar";
 		this.precioEntrada = 5;
 		this.butacasOcupadas=0;
