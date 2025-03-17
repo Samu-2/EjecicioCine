@@ -113,9 +113,52 @@ public class Cine {
 	public void setPrecioEntrada(double precioEntrada) {
 		this.precioEntrada = precioEntrada;
 	}
+	/**
+	 * butacasLibres
+	 * @return int numero de butacas libres
+	 */
+	public int butacasLibres() {
+		return aforo-butacasOcupadas;
+	}
+	/**
+	 * 
+	 * @return porcentaje de butacas ocupadas
+	 */
+	public double porcentajeOcupacion() {
+		return (butacasOcupadas/(double)aforo)*100;
+		
+	}
+	/**
+	 * 
+	 * @return int ingresos por venta de entradas
+	 */
+	
+	public double ingresosSala() {
+		return precioEntrada*butacasOcupadas;
+	}
+	/**
+	 * vaciar la sala
+	 */
+	public void vaciarSala() {
+		setButacasOcupadas(0);
+	}
+	/**
+	 * se ocupa una butaca mas
+	 */
+	public void venderEntrada() {
+		butacasOcupadas=butacasOcupadas+1;
+	}
+	/**
+	 * se resta 1 a butacas ocupadas
+	 */
+	public void devolverEntrada() {
+		butacasOcupadas=butacasOcupadas-1;
+	}
+	
 	/***
 	* to string completo
 	 */
+	
 	
 	@Override
 	public String toString() {
